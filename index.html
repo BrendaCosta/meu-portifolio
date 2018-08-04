@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brenda Costa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- icones para a versão mobile e logo do Site-->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brenda Costa</a>
+            </div>
+            <!-- Páginas do site -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#slide-imagens">Projetos</a></li>
+                <li><a href="#videos-responsivos">Videos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+    <header>
+      <div class="header-content">
+        <!-- div da imagem -->
+      <div class="header-content-inner">
+        <img class="img-circle"src="img/brenda.jpg" alt="Brenda latinidades">
+      </div>
+      <div class="header-content-inner">
+        <!-- div titulo -->
+        <h1>Brenda Costa</h1>
+        <h3>Graduanda em Sistemas de informação</h3>
+      </div>
+      </div>
+    </header>
+
+  <section id="slide-imagens">
+      <h2 class="text-center">Projetos</h2>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> </div>
+  <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> <!-- o active mostra o primeiro slide -->
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li></ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="imagem-slide" src="img/campus.jpg" alt="...">
+        <div class="carousel-caption">
+          <h3>CAMPUS PARTY</h3>
+        </div>
+      </div>
+      <div class="item">
+        <img class="imagem-slide" src="img/oxenti.jpg" alt="...">
+        <div class="carousel-caption">
+          <h3>OXENTI MENINA!</h3>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span> </a>
+
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span></a>
+
+</div>
+</section>
+
+<section id="videos-responsivos">
+  <div class="container">
+    <div class="row">
+        <h1 class="text-center">Videos</h1>
+    </div>
+    <div class="row">
+      <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W1lqBLtZZpA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sonmfFf5VSk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen"></iframe>
+          </div>
+
+      </div>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section id="contato">
+    <div class="container">
+        <h2 class="text-center">Contato </h2>
+        <form class="text-center">
+          <p>
+            <input placeholder="Nome" class="form-control" type="text" id="txt-nome">
+          </p>
+          <p>
+            <input placeholder="E-mail" class="form-control" type="email" id="ext-email">
+          </p>
+          <p>
+            <textarea placeholder="Mensagem" class="form-control" id="txt-mensagem"></textarea>
+          </p>
+          <p>
+            <input onclick="enviar()" class="btn btn-primary form-control"type="submit" value="Enviar">
+          </p>
+        </form>
+    </div>
+  </section>
+    <script src="js/arquivo.js">
+
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
